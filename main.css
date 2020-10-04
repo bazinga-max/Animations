@@ -1,0 +1,87 @@
+.sky, .grass , .road
+{
+    position: relative;
+}
+.sky
+{
+    height: 200;
+    width: 100%;
+    background-color: lightblue;
+
+}
+.grass
+{
+    height: 200;
+    width: 100%;
+    background-color: green;
+
+}
+.road
+{
+    height: 200;
+    width: 100%;
+    background-color: black;
+
+}
+.line
+{
+    box-sizing: border-box;
+    border: 5px dashed white;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+.car
+{
+    position: absolute;
+    height: 170;
+    top: -70px;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0.77, 1, 0.2);
+}
+.car1
+{
+    position: absolute;
+    height: 170;
+    top: 50px;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+}
+.cloud
+{
+    position: absolute;
+    
+    
+}
+.cloud :nth-child(1)
+{
+    
+    width: 50px;
+    top: 120px;
+    position: absolute;
+    opacity: 0.5;
+}
+.cloud :nth-child(2)
+{
+
+    position: absolute;
+    width: 100px;
+    top:0;
+    left: 50;
+}
+@keyframes drive
+{
+    from{transform: translateX(-200px)}
+    to{transform: translateX(1500px)}
+}
